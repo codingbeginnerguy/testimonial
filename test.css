@@ -1,239 +1,229 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 .hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  h1{
-      font-weight: 600;
-      font-size: 3rem;
-      position: absolute;
-      top:1rem;
-      left:40vw;
-      margin-top: 2rem;
-  }
-  h1::after {
-    content: "";
-    width: 15rem;
-    height: 0.3rem;
-    background: linear-gradient(to right, #f44336, #9f4db5);
-    position: absolute;
-    bottom: -2.0rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .hero .testimage{
-      width:60rem;
-      height:60rem;
-      position:absolute;
-      top:10rem;
-      left:5rem;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-  .hero .testimage img{
-      width:100%;
-      display: inline-block;
-  }
-  
-  .review-box {
-    width: 90%;
-    max-width: 55.0rem;
-    min-width: 26rem;
-    height: 33.0rem;
-    border-radius: 1.0rem;
-    box-shadow: -1.0rem 1.0rem 4.0rem rgba(0, 0, 0, 0.25);
-    position: relative;
-    overflow: hidden;
-    margin-left: 40vw;
-  }
-  .card {
-    height: 33.0rem;
-    padding: 4.0rem;
-    color: #777;
-    line-height: 2.2rem;
-    box-sizing: border-box;
-    background: #fff;
-    position: relative;
-    z-index: 1;
-  }
-  p {
-    font-size: 2.2rem;
-  }
-  .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.0rem;
-  }
-  .profile img {
-    width: 10.0rem;
-    height: 10.0rem;
-    border-radius: 50%;
-    margin-right: 2.0rem;
-  }
-  .profile h3 {
-    font-size: 2.6rem;
-    color: #f44336;
-    margin-bottom: .8rem;
-  }
-  #slide {
-    width: 100%;
-    padding-right: 6.0rem;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-  }
-  
-  .slidebar {
-    width: 6.0rem;
-    height: 100%;
-    padding: 1.5rem 0;
-    box-sizing: border-box;
-    background: #f44336;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .slidebar img {
-    width: 3.5rem;
-    padding: .5rem;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .card::before {
-    content: "";
-    height: 11.0rem;
-    width: 11.0rem;
-    border-bottom-right-radius: 100%;
-    background: #f44336;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  .socials {
-    margin-left: 14.0rem;
-  }
-  .socials i {
-    color: #777;
-    font-weight: 600;
-    font-size: 3.0rem;
-    padding: .8rem;
-    margin-top: 1.0rem;
-    margin-left: 2.0rem;
-    cursor: pointer;
-  }
-  .socials i:hover {
-    transition: 0.5s;
-    border: 1px solid #777;
-    transform: scale(1.2);
-    transform: translateX(2.0rem);
-    transform-origin: center;
-    transform-style: preserve-3d;
-    border-radius: 50%;
-  }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  left: 40vw;
+  margin-top: 2rem;
+}
+h1::after {
+  content: "";
+  width: 15rem;
+  height: 0.3rem;
+  background: linear-gradient(to right, #f44336, #9f4db5);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .testimage {
+  width: 60rem;
+  height: 60rem;
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero .testimage img {
+  width: 100%;
+  display: inline-block;
+}
+
+.review-box {
+  width: 90%;
+  max-width: 55rem;
+  min-width: 26rem;
+  height: 33rem;
+  border-radius: 1rem;
+  box-shadow: -1rem 1rem 4rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  margin-left: 26vw;
+}
+.card {
+  height: 33rem;
+  padding: 4rem;
+  color: #777;
+  line-height: 2.2rem;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+p {
+  font-size: 2.2rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.profile h3 {
+  font-size: 2.6rem;
+  color: #f44336;
+  margin-bottom: 0.8rem;
+}
+#slide {
+  width: 100%;
+  padding-right: 6rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.slidebar {
+  width: 6rem;
+  height: 100%;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  background: #f44336;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.slidebar img {
+  width: 3.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card::before {
+  content: "";
+  height: 11rem;
+  width: 11rem;
+  border-bottom-right-radius: 100%;
+  background: #f44336;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.socials {
+  margin-left: 14rem;
+}
+.socials i {
+  color: #777;
+  font-weight: 600;
+  font-size: 3rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.socials i:hover {
+  transition: 0.5s;
+  border: 1px solid #777;
+  transform: scale(1.2);
+  transform: translateX(2rem);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
 
 
 
 /*______________________________________________ RESPONSIVENESS _____________________________________________________*/
 
-  @media (max-width: 1300px) {
-    .hero .testimage{
-        width:55rem;
-        height:55rem;
-    }
-    .review-box{
-        width: 80%;
-        max-width: 55.0rem;
-    }
-  }
-  @media (max-width: 1100px) {
-    .hero .testimage{
-        width:52rem;
-        height:52rem;
-    }
-  }
-  @media (max-width: 998px) {
-    html {
-      font-size: 55%;
-    }
-    .hero .testimage{
-        width:50rem;
-        height:50rem;
-    }
-}
 
+@media (max-width: 1024px) {
+  .review-box {
+    margin-left: 28vw;
+    margin-top: -32rem;
+  }
+  .hero .testimage {
+    margin-left: 10vw;
+  }
+  html {
+    font-size: 42%;
+  }
+}
 @media (max-width: 768px) {
-    html {
-      font-size: 45%;
-    }
-    h1{
-        left:30vw;
-    }
-    .hero .testimage{
-        width:40rem;
-        height:40rem;
-    }
-    .review-box{
-      top:-12rem;
-      left:-10rem;
-      width:70%;
-    }
+  .review-box {
+    margin-left: 26vw;
+    margin-top: -38rem;
+    width: 88%;
   }
-@media (max-width: 468px) {
-    html {
-      font-size: 35%;
-    }
-    .socials {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-left: 3rem;
-    }
-    h1{
-        left:30vw;
-    }
-    .hero .testimage{
-        width:35rem;
-        height:35rem;
-        margin-left: 20vw;
-    }
-    .hero{
-        display: flex;
-        flex-direction: row;
-    }
-    .review-box {
-      top: 8rem;
-      left: -28rem;
-      width: 200%;
+  .hero .testimage {
+    margin-left: 0vw;
   }
+  html {
+    font-size: 36%;
   }
-  @media (max-width: 400px){
-    .review-box {
-        margin-left: 0vw;
-        margin-top: 10rem;
-    }
-    .hero .testimage{
-        margin-left: 10vw;
-    }
+}
+@media (max-width: 426px) {
+  .review-box {
+    margin-left: -16vw;
+    margin-top: 12rem;
+    width: 420%;
+    left: -8rem;
   }
-  
+  .hero .testimage {
+    top: 4rem;
+    left: 8rem;
+    margin-left: 10vw;
+    width: 50rem;
+    height: 50rem;
+  }
+  html {
+    font-size: 32%;
+  }
+}
+@media (max-width: 320px) {
+  .review-box {
+    margin-left: -16vw;
+    margin-top: -30rem;
+    width: 440%;
+    left: -8rem;
+  }
+  .hero .testimage {
+    top: 6rem;
+    left: 8rem;
+    margin-left: 10vw;
+    width: 45rem;
+    height: 45rem;
+  }
+  html {
+    font-size: 24%;
+  }
+  h1{
+    left:32vw;
+  }
+}
