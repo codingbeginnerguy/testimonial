@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+    <div class="hero">
+        <div class="maintest">
+            <h1>Employee's Reviews</h1>
+        </div>
+        <div class="mid">
+            <div class="testimage">
+                <img src="1.png" alt="">
+            </div>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                          <img src="rahul.jpg" alt="" />
+                          <div>
+                            <h3>Rahul Budhan</h3>
+                            <p>Marketing/Social Media</p>
+                          </div>
+                        </div>
+                        <p>
+                          My favourite thing about Mussut is the work environment, how everyone connects and works the whole process. The team feels like family.
+                        </p>
+                        <p class="socials">
+                          <a href="https://www.instagram.com/rahul_budhan.22/" target="_blank"><i class="fa fa-instagram"></i></a></i>
+                          <a href="https://www.linkedin.com/mwlite/in/rahul-budhan-10bb531a6" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="slidebar">
+                    <img src="up-arrow.png" id="upArrow">
+                    <img src="down-arrow.png" id="downArrow">
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".review-box"), {
+            max: 20,
+            speed: 400,
+            glare:true,
+            "max-glare":0.2,
+        });
+    </script>
+    <script>
+        var slide =document.getElementById("slide");
+        var upArrow =document.getElementById("upArrow");
+        var downArrow =document.getElementById("downArrow");
+
+        let x=0;
+        upArrow.onclick = function(){
+            if(x > "-1200"){
+                x = x-33.0;
+                slide.style.top = x + "rem";
+            }
+        }
+        downArrow.onclick = function(){
+            if(x < 0){
+                x = x + 33.0;
+                slide.style.top = x + "rem";
+            }
+        }
+    </script>
+</body>
+</html>
